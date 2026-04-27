@@ -1,123 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
   <meta charset="UTF-8">
-  <title>Joy Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
-
-    /* 🔥 Banner */
-    .banner {
-      height: 100vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-
-    .banner h1 {
-      font-size: 50px;
-      margin: 0;
-    }
-
-    .banner p {
-      font-size: 20px;
-    }
-
-    /* 🔹 Section */
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
-
-    /* 🔹 Project */
-    .project {
-      margin-bottom: 20px;
-    }
-
-    /* 🔹 Button */
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    .btn:hover {
-      background: #555;
-    }
-  </style>
+  <title>我的個人簡介</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- 🔥 Banner -->
-  <div class="banner">
-    <div>
-      <h1>Joy Lee</h1>
-      <!-- <p>Machine Learning & Biosensor Engineer</p> -->
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
+  <div class="card">
+    <h1>你好，我是 [你的名字]</h1>
+    <p>目前正在學習網頁開發與資料科學。</p>
+    <button id="btn">點擊跟我打招呼</button>
   </div>
 
-  <!-- About -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I specialize in machine learning and biosensor integration,
-      with experience in SERS signal analysis and embedded systems.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>SERS Spectral Classification</h3>
-      <p>PCA + LDA for biosignal analysis, achieving high classification accuracy.</p>
-    </div>
-
-    <div class="project">
-      <h3>Arduino ML System</h3>
-      <p>Integrated sensors with Python-based ML model for real-time prediction.</p>
-    </div>
-
-  </section>
-
-  <!-- Skills -->
-  <section>
-    <h2>Skills</h2>
-    <p>Python | PyTorch | Arduino | Machine Learning</p>
-  </section>
-
-  <!-- Contact -->
-  <section>
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-  </section>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
