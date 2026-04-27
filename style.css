@@ -1,0 +1,125 @@
+/* 全域設定 */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.banner {
+    height: 80vh;
+    /* 縮短一點點 */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+/* 經歷條目排版 */
+.info-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.date {
+    min-width: 180px;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.content h3 {
+    margin: 0;
+    color: #2980b9;
+}
+
+.company {
+    font-weight: 600;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* 技能標籤 */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background: #ebf5fb;
+    color: #2980b9;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* 專案卡片 */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #333;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* 手機版適應 */
+@media (max-width: 600px) {
+    .info-item {
+        flex-direction: column;
+    }
+
+    .date {
+        margin-bottom: 5px;
+    }
+}
